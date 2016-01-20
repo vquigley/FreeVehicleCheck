@@ -5,11 +5,11 @@ var http = require('http');
 
 var server = http.createServer(app);
 
-var ipAddress = process.env.OPENSHIFT_NODEJS_IP;
-var port      = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8000;
+app.set('port', process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3002);
+app.set('ip', process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1");
 
-server.listen(port, ipAddress);
+server.listen(app.get('port'), app.get('ip'));
 
 server.on('listening', function () {
-    console.log('Server listening on :%d', this.address().port);
+    console.log("✔ Express server listening at %s:%d ", app.get('ip'),app.get('port'));
 });
