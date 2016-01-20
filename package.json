@@ -20,7 +20,6 @@
     "kraken-js": "^1.0.3",
     "makara": "^2.0.3",
     "requirejs": "^2.1.22"
-    
   },
   "devDependencies": {
     "bower": "^1.7.2",
