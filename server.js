@@ -3,15 +3,13 @@
 var app = require('./index');
 var http = require('http');
 
+var server = http.createServer(app);
 
-var server;
+var ipAddress = process.env.OPENSHIFT_NODEJS_IP;
+var port      = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8000;
 
-/*
- * Create and start HTTP server.
- */
+server.listen(port, ipAddress);
 
-server = http.createServer(app);
-server.listen(process.env.PORT || 8000);
 server.on('listening', function () {
-    console.log('Server listening on http://localhost:%d', this.address().port);
+    console.log('Server listening on :%d', this.address().port);
 });
