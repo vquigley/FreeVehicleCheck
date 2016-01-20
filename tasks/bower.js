@@ -3,14 +3,17 @@
 
 module.exports = function bower(grunt) {
 	// Load task
-	grunt.loadNpmTasks('grunt-bower');
-
+	grunt.loadNpmTasks('grunt-bower-task');
+	
 	// Options
-	return {
-        bower: {
-		  dev: {
-			dest: 'public/components'
-		  }
+	return { 
+		bower: {
+			install: {
+				
+			},
+			options: {
+					copy:false
+				}
 		}
-	};
+	}
 };

@@ -3,18 +3,11 @@
 
 
 requirejs.config({
-	shim : {
-        "bootstrap" : { "deps" :['jquery'] }
-    },
-    paths: {
-		"jquery":"/components/jquery/dist/jquery.min",
-		"bootstrap":"/components/bootstrap/dist/js/bootstrap.min"
-	},
-	priority:["jquery"]
+    mainConfigFile: 'js/requireConf.js'
 });
 
 
-require(["./main"], function () {
+require(['./main'], function () {
 
     var app = {
         initialize: function () {

@@ -9,11 +9,12 @@ module.exports = function requirejs(grunt) {
 	return {
         build: {
             options: {
-                baseUrl: 'public/js',
-                dir: '.build/js',
+				mainConfigFile: 'public/js/requireConf.js',
+                baseUrl: 'public',
+                dir: '.build',
                 optimize: 'uglify',
                 modules: [
-                    { name: 'app' }
+                    { name: 'js/app' }
                 ]
             }
         }
