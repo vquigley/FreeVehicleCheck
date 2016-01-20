@@ -16,5 +16,5 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', [ 'eslint', 'mochacli' ]);
 
-    
+    grunt.registerTask('startDev', ['nodemon', 'browserSync']);
 };
