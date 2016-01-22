@@ -12,7 +12,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-makara-amdify');
     
     // Register group tasks
-    grunt.registerTask('build', ['eslint', 'eslint', 'dustjs', 'less', 'requirejs', 'copyto']);
+    grunt.registerTask('build', ['copyto', 'requirejs', 'less', 'dustjs']);
 
     grunt.registerTask('test', [ 'eslint', 'mochacli' ]);
 
