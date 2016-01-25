@@ -7,7 +7,7 @@ requirejs.config({
 });
 
 
-require(["./main"], function () {
+require(['./main'], function () {
 
     var app = {
         initialize: function () {
