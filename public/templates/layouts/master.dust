@@ -34,7 +34,6 @@
 					<ul class="nav navbar-nav navbar-right menu">
 							<li><a href="#page-top" class="page-scroll active">Home</a></li>
 							<li><a href="#section2" class="page-scroll">Features</a></li>
-							<li><a href="#work" class="page-scroll">Portfolio</a></li>
 							<li><a href="#section4" class="page-scroll">Contact</a></li>
 					</ul>
 				</nav>
