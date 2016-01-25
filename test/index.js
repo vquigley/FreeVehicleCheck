@@ -30,7 +30,7 @@ describe('index', function () {
             .get('/')
             .expect(200)
             .expect('Content-Type', /html/)
-            .expect(/Enter Registration WRONG/)
+            .expect(/Enter Registration/)
             .end(function (err, res) {
                 done(err);
             });
