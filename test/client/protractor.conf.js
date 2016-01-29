@@ -1,7 +1,10 @@
 // An example configuration file.
+
+var url = process.env.PROTRACTOR_URL || "http://localhost:8000";
+
 exports.config = {
   directConnect: true,
-  baseUrl:"http://localhost:8000",
+  baseUrl: url,
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
