@@ -20,7 +20,7 @@ module.exports = function mochacli(grunt) {
     // Options
     return {
         xunit: {
-            src: ['test/**/*.js'],
+            src: ['test/server/**/*Spec.js'],
             options: {
                 timeout: 6000,
                 'check-leaks': true,
