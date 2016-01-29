@@ -1,7 +1,7 @@
 // An example configuration file.
 exports.config = {
   directConnect: true,
-  baseUrl:"http://localhost:3000",
+  baseUrl:"http://localhost:8000",
 
   // Capabilities to be passed to the webdriver instance.
   capabilities: {

@@ -8,6 +8,9 @@
     "startDev": "grunt startDev",
     "test": "grunt test",
     "e2eTest": "grunt protractor",
+    "pree2eTestWithServer": "pm2 start server.js --name e2eTestApp",
+    "e2eTestWithServer": "grunt protractor",
+    "poste2eTestWithServer": "pm2 delete e2eTestApp",
     "build": "grunt build",
     "coverage": "node ./node_modules/istanbul/lib/cli.js cover --dir=coverage --report=cobertura --report=html --include-all-sources -x \"**public/components/**/*.js **tasks/**/*.js\" ./node_modules/mocha/bin/_mocha -- test/index.js"
   },
