@@ -1,9 +1,12 @@
 {
   "name": "freevehiclecheck",
-  "version": "0.1.0",
-  "description": "Free Vehicle Check",
+  "version": "0.0.1",
+  "description": "Free Vehicle Report",
   "author": "Vincent Quigley",
   "main": "server.js",
+  "engines": {
+    "node": "4.2.1"
+  }
   "scripts": {
     "startDev": "grunt startDev",
     "test": "grunt test",
