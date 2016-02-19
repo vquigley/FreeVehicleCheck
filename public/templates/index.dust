@@ -1,5 +1,9 @@
 {>"layouts/master" /}
 
+{<title}
+  Free Vehicle Report
+{/title}
+
 {<body}
 <div class="container-fluid main" id="page-top">
 	<div class="row">
