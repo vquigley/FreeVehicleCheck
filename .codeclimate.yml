@@ -1,0 +1,10 @@
+engines:
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+exclude_paths:
+- node_modules/**/*
+- public/components/**/*
