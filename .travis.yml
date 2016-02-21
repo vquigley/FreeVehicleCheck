@@ -17,5 +17,6 @@ deploy:
 addons:
     code_climate:
         repo_token: e0b83922639c997a80f7278d5a94c0dc48701dcc37458fc17b75801b5ec4b8f0
-after_script:
+after_success:
+  - npm install codeclimate-test-reporter
   - codeclimate-test-reporter < coverage/lcov.info
